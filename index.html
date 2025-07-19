@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vrinda Tax Consultancy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <button class="burger" id="burger">☰</button>
+  <img src="logo.png" alt="Vrinda Tax Consultancy" class="logo">
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#guides">Vrinda Explains</a>
+    <a href="#contact">Contact</a>
+    <a href="#reviews">Reviews</a>
+  </div>
+</nav>
+<div class="overlay" id="overlay"></div>
+
+<section id="home" class="hero">
+  <img src="logo.png" alt="Vrinda logo" style="width:150px">
+  <h1 class="fade">Stress‑Free Tax & Accounting</h1>
+  <p class="fade">For entrepreneurs & families across Tricity</p>
+  <button class="cta fade" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Free Call</button>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title fade">Why We Exist</h2>
+    <div class="card fade">
+      <p>We translate India’s complex tax code into simple next steps—so you can grow with clarity.</p>
+    </div>
+    <h2 class="section-title fade" style="margin-top:50px">What We Do</h2>
+    <div class="services-grid">
+      <div class="card fade"><h3>ITR Filing</h3><p>End‑to‑end return with max deductions.</p></div>
+      <div class="card fade"><h3>GST Compliance</h3><p>Registrations & monthly returns without headaches.</p></div>
+      <div class="card fade"><h3>Bookkeeping</h3><p>Cloud ledgers updated weekly; live dashboard.</p></div>
+      <div class="card fade"><h3>Payroll & TDS</h3><p>Payslips, PF/ESI and TDS deposits on time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="calculator">
+  <div class="container">
+    <h2 class="section-title fade">Quick Income‑Tax Estimator</h2>
+    <div class="calculator-box fade">
+      <input type="text" id="income" inputmode="numeric" pattern="\d*" placeholder="Annual taxable income (₹)">
+      <button onclick="runCalc()">Calculate</button>
+      <div id="calc-out"></div>
+    </div>
+  </div>
+</section>
+
+<section id="guides">
+  <div class="container">
+    <h2 class="section-title fade">Vrinda Explains</h2>
+    <div class="gallery fade">
+      <img src="promo 4.png" loading="lazy" alt="ITR Forms explained">
+      <img src="promo 5.png" loading="lazy" alt="Types of taxpayers">
+      <img src="Promo 7.png" loading="lazy" alt="NRI tax rules">
+      <img src="Promo 8.png" loading="lazy" alt="Common ITR mistakes">
+      <img src="Promo 9.png" loading="lazy" alt="80C tax-saving options">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title fade">Ready to Chat?</h2>
+    <div class="contact-card fade">
+      <p><strong>Call / WhatsApp:</strong> <a href="tel:+919779463824">+91 97794 63824</a></p>
+      <p><strong>Email:</strong> <a href="mailto:consultantvrinda@gmail.com">consultantvrinda@gmail.com</a></p>
+      <div style="margin-top:24px">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/consultantvrinda" style="min-width:280px;height:620px;border-radius:var(--radius);overflow:hidden"></div>
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <h2 class="section-title fade">Client Stories</h2>
+    <div class="testimonials">
+      <div class="card fade"><p>“Dreading July? Now returns are filed before June ends.”<br><strong>– Neha</strong></p></div>
+      <div class="card fade"><p>“Found ₹80k missed GST input credit. Huge win!”<br><strong>– Akash</strong></p></div>
+      <div class="card fade"><p>“Response under an hour, even Sundays.”<br><strong>– Ritu</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 Vrinda Tax Consultancy. All rights reserved.</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
