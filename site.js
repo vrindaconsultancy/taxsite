@@ -1,3 +1,18 @@
+ // fade reveal
+ const observer=new IntersectionObserver(entries=>{
+   entries.forEach(e=>{
+     if(e.isIntersecting){
+       e.target.classList.add('show');
+       observer.unobserve(e.target);
+     }
+   });
+ },{threshold:.2});
+ document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+-document.querySelectorAll('.fade').forEach(el=>el.classList.add('show'));   // ← delete this
++
++// FORCE the hero to show on load
++document.getElementById('home').querySelectorAll('.fade')
++        .forEach(el=>el.classList.add('show'));
 
 // live Indian comma formatting
 const incomeInput=document.getElementById('income');
